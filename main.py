@@ -11,3 +11,6 @@ def index():
 
     # print like > Container EDU | POD Working : downward-env | nodename : lima-rancher-desktop | namespace : default
     return f"Container EDU | POD Working : {POD_NAME} | nodename : {NODE_NAME} | namespace : {POD_NAMESPACE}"
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
